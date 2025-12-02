@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|e:\\\u684C\u9762\\just play\\\u5FC3\u7535\u56FE\\wpfapp1\\wpfapp1\\viewmodels\\chartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|solutionrelative:viewmodels\\chartviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|solutionrelative:mainwindow.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\models\\txtdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|solutionrelative:models\\txtdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\converters\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|solutionrelative:converters\\nulltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\models\\chartparas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|solutionrelative:models\\chartparas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\util\\txtfilereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|solutionrelative:util\\txtfilereader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ACDEA853-A05F-4BEC-A195-82B8C913BDCB}|WpfApp1.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TxtFileReader.cs",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\Util\\TxtFileReader.cs",
+              "RelativeDocumentMoniker": "Util\\TxtFileReader.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\Util\\TxtFileReader.cs",
+              "RelativeToolTip": "Util\\TxtFileReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T14:23:34.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChartParas.cs",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\Models\\ChartParas.cs",
+              "RelativeDocumentMoniker": "Models\\ChartParas.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\Models\\ChartParas.cs",
+              "RelativeToolTip": "Models\\ChartParas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T12:45:16.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NullToVisibilityConverter.cs",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\Converters\\NullToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "Converters\\NullToVisibilityConverter.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\Converters\\NullToVisibilityConverter.cs",
+              "RelativeToolTip": "Converters\\NullToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T12:45:01.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TxtDataModel.cs",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\Models\\TxtDataModel.cs",
+              "RelativeDocumentMoniker": "Models\\TxtDataModel.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\Models\\TxtDataModel.cs",
+              "RelativeToolTip": "Models\\TxtDataModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T12:43:22.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChartViewModel.cs",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\ViewModels\\ChartViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ChartViewModel.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\ViewModels\\ChartViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ChartViewModel.cs",
+              "ViewState": "AgIAAF0BAAAAAAAAAAAmwLABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T14:51:14.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T12:12:01.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\WpfApp1\\WpfApp1\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-22T15:35:51.007Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 475,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

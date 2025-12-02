@@ -1,0 +1,100 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
+        Title="实时曲线显示"
+        Height="400" Width="600"
+        Loaded="Window_Loaded"
+        Closing="Window_Closing">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition Height="40"/>
+		</Grid.RowDefinitions>
+
+		<ToolBarTray Grid.Row="0">
+			<ToolBar>
+				<Button Content="加载TXT数据"  
+                        Command="{Binding LoadTxtDataCommand}"
+                        Padding="10,5"/>
+				<Separator/>
+				<TextBlock Text="当前值：" 
+                         VerticalAlignment="Center"  
+                         Margin="10,0"/>
+				<TextBlock Text="{Binding CurValue}"  
+                         VerticalAlignment="Center"  
+                         Width="60"/>
+			</ToolBar>
+		</ToolBarTray>
+
+		<lvc:CartesianChart Grid.Row="0" 
+                            Margin="2" Name="Chart1"
+                            Background="White" Loaded="Chart1_Loaded"
+                            MouseWheel="Chart_OnMouseWheel" MouseMove="Chart_OnMouseMove" MouseDown="Chart_OnMouseDown">
+			<lvc:CartesianChart.Series>
+				<lvc:LineSeries 
+             Values="{Binding ChartValues}"  
+    PointGeometry="{x:Static lvc:DefaultGeometries.Circle}"
+    PointGeometrySize="5"
+    PointForeground="#FFFF8C00"
+    LineSmoothness="1"
+    StrokeThickness="2"
+    Stroke="#FF008000"
+                    Name="LineS1">
+					<lvc:LineSeries.Fill>
+						<LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+							<GradientStop Color="White" Offset="0"/>
+							<GradientStop Color="Transparent" Offset="1"/>
+						</LinearGradientBrush>
+					</lvc:LineSeries.Fill>
+				</lvc:LineSeries>
+			</lvc:CartesianChart.Series>
+
+			<lvc:CartesianChart.AxisX>
+				<lvc:Axis MinValue="{Binding AxisMin1}" 
+                          MaxValue="{Binding AxisMax1}"
+                          LabelFormatter="{Binding DateTimeFormatter}" 
+                          LabelsRotation="0" FontSize="10">
+					<lvc:Axis.Separator>
+						<lvc:Separator Step="{Binding XAxisStep}" 
+                                       Stroke="#FF595F7F"           
+                                       StrokeDashArray="2,2" />
+					</lvc:Axis.Separator>
+				</lvc:Axis>
+			</lvc:CartesianChart.AxisX>
+
+			<lvc:CartesianChart.AxisY>
+				<lvc:Axis FontSize="10" 
+                          MinValue="{Binding YAxisMin}"    
+                          MaxValue="{Binding YAxisMax}">
+					<lvc:Axis.Separator>
+						<lvc:Separator Step="{Binding YAxisStep}" 
+                                       Stroke="#FF595F7F"      
+                                       StrokeDashArray="2,2" />
+					</lvc:Axis.Separator>
+				</lvc:Axis>
+			</lvc:CartesianChart.AxisY>
+		</lvc:CartesianChart>
+
+		<StackPanel Grid.Row="1" Orientation="Horizontal"
+            HorizontalAlignment="Center" Margin="0,0,0,5">
+			<TextBlock Text="当前值" VerticalAlignment="Center"/>
+			<TextBox Text="{Binding CurValue}" 
+             IsReadOnly="True"          
+             Width="200"
+             Margin="10,0,0,0" />
+
+			<Button Content="加载TXT数据" 
+            Width="80" 
+            Height="30"
+            Margin="10,0,0,0" 
+            Command="{Binding LoadTxtDataCommand}"/>
+		</StackPanel>
+	</Grid>
+</Window>

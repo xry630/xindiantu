@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9758DDF9-91FF-4D6E-98AC-E670D04FEF1C}|MsPaint\\MsPaint.csproj|e:\\\u684C\u9762\\just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\mspaint\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9758DDF9-91FF-4D6E-98AC-E670D04FEF1C}|MsPaint\\MsPaint.csproj|solutionrelative:mspaint\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9758DDF9-91FF-4D6E-98AC-E670D04FEF1C}|MsPaint\\MsPaint.csproj|E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\mspaint\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9758DDF9-91FF-4D6E-98AC-E670D04FEF1C}|MsPaint\\MsPaint.csproj|solutionrelative:mspaint\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9758DDF9-91FF-4D6E-98AC-E670D04FEF1C}|MsPaint\\MsPaint.csproj|E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\mspaint\\draw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9758DDF9-91FF-4D6E-98AC-E670D04FEF1C}|MsPaint\\MsPaint.csproj|solutionrelative:mspaint\\draw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "draw.cs",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\MsPaint\\draw.cs",
+              "RelativeDocumentMoniker": "MsPaint\\draw.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\MsPaint\\draw.cs",
+              "RelativeToolTip": "MsPaint\\draw.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAKgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T14:40:00.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\MsPaint\\Form1.cs",
+              "RelativeDocumentMoniker": "MsPaint\\Form1.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\MsPaint\\Form1.cs",
+              "RelativeToolTip": "MsPaint\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T17:06:27.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\MsPaint\\Form1.cs",
+              "RelativeDocumentMoniker": "MsPaint\\Form1.cs",
+              "ToolTip": "E:\\\u684C\u9762\\Just play\\\u5FC3\u7535\u56FE\\electrocardiogram-master\\electrocardiogram-master\\MsPaint\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "MsPaint\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T17:06:47.402Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a8466fe-5a05-4f81-ad45-7d7c1316817e}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 475,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

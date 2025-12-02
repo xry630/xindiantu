@@ -1,0 +1,121 @@
+<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:converters="clr-namespace:WpfApp1.Converters"
+        xmlns:diagnostics="clr-namespace:System.Diagnostics"
+        mc:Ignorable="d"
+        Title="数据显示" Height="600" Width="800">
+    
+    <Window.Resources>
+        <converters:NullToVisibilityConverter x:Key="NullToVisibilityConverter"/>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- 顶部工具栏 -->
+        <ToolBarTray Grid.Row="0">
+            <ToolBar>
+                <Button Content="加载TXT数据" 
+                        Command="{Binding LoadTxtDataCommand}"
+                        Padding="10,5"/>
+                <Separator/>
+                <TextBlock Text="当前值："
+                         VerticalAlignment="Center"
+                         Margin="10,0"/>
+                <TextBlock Text="{Binding CurValue}"
+                         VerticalAlignment="Center"
+                         Width="60"/>
+            </ToolBar>
+        </ToolBarTray>
+
+        <!-- 图表区域 -->
+        <TabControl Grid.Row="1" Margin="5">
+            <TabItem Header="实时数据">
+                <lvc:CartesianChart DisableAnimations="True"
+                                  Hoverable="False"
+                                  DataTooltip="{x:Null}"
+                                  Margin="10">
+                    <lvc:CartesianChart.Series>
+                        <lvc:LineSeries Values="{Binding Chart1Values}"
+                                      Title="实时数据"
+                                      PointGeometry="{x:Null}"
+                                      LineSmoothness="0.5"
+                                      StrokeThickness="2"
+                                      Stroke="DodgerBlue"
+                                      Fill="Transparent"/>
+                    </lvc:CartesianChart.Series>
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis LabelFormatter="{Binding DateTimeFormatter}"
+                                MaxValue="{Binding AxisMax1}"
+                                MinValue="{Binding AxisMin1}"
+                                Unit="{Binding AxisUnit}"
+                                Title="时间"
+                                DisableAnimations="True"/>
+                    </lvc:CartesianChart.AxisX>
+                    <lvc:CartesianChart.AxisY>
+                        <lvc:Axis MaxValue="{Binding YAxisMax}"
+                                MinValue="{Binding YAxisMin}"
+                                Unit="{Binding YAxisStep}"
+                                Title="数值"
+                                DisableAnimations="True"/>
+                    </lvc:CartesianChart.AxisY>
+                </lvc:CartesianChart>
+            </TabItem>
+
+            <TabItem Header="TXT数据" 
+                    Visibility="{Binding ChartData, Converter={StaticResource NullToVisibilityConverter}}">
+                <lvc:CartesianChart DisableAnimations="True"
+                                  Hoverable="True"
+                                  Margin="10">
+                    <lvc:CartesianChart.Series>
+                        <lvc:LineSeries Values="{Binding ChartData}"
+                                      Title="TXT数据"
+                                      PointGeometry="{x:Null}"
+                                      LineSmoothness="0"
+                                      StrokeThickness="2"
+                                      Stroke="OrangeRed"
+                                      Fill="Transparent">
+                            <lvc:LineSeries.Values>
+                                <lvc:ChartValues x:TypeArguments="local:TxtDataModel"/>
+                            </lvc:LineSeries.Values>
+                        </lvc:LineSeries>
+                    </lvc:CartesianChart.Series>
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis Title="时间"
+                                MinValue="{Binding TxtDataMinX}"
+                                MaxValue="{Binding TxtDataMaxX}"
+                                LabelFormatter="{Binding TxtDataFormatter}"/>
+                    </lvc:CartesianChart.AxisX>
+                    <lvc:CartesianChart.AxisY>
+                        <lvc:Axis Title="数值"
+                                MinValue="{Binding TxtDataMinY}"
+                                MaxValue="{Binding TxtDataMaxY}"/>
+                    </lvc:CartesianChart.AxisY>
+                    <lvc:CartesianChart.DataTooltip>
+                        <lvc:DefaultTooltip SelectionMode="OnlySender"/>
+                    </lvc:CartesianChart.DataTooltip>
+                </lvc:CartesianChart>
+            </TabItem>
+        </TabControl>
+
+        <!-- 底部状态栏 -->
+        <StatusBar Grid.Row="2">
+            <StatusBarItem>
+                <TextBlock Text="状态: 就绪"/>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock Text="{Binding CurValue, StringFormat=当前值: {0:F2}}"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window> 
