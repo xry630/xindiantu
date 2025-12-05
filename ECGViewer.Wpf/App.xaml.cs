@@ -51,7 +51,7 @@ namespace ECGViewer.Wpf
 
             ServiceProvider = _host.Services;
 
-            // Create and show the main window
+            // Create and show the main window with injected view model
             var mainWindow = ServiceProvider.GetRequiredService<MainWindow>();
             mainWindow.Show();
 
