@@ -1,4 +1,6 @@
 using System.Windows;
+using ECGViewer.Wpf.Services;
+using ECGViewer.Wpf.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -23,8 +25,11 @@ namespace ECGViewer.Wpf
 
         private void ConfigureServices(IServiceCollection services)
         {
+            // Register Services
+            services.AddTransient<IDataService, DataService>();
+
             // Register ViewModels
-            // services.AddTransient<MainWindowViewModel>();
+            services.AddTransient<MainWindowViewModel>();
 
             // Register Views
             services.AddTransient<MainWindow>();

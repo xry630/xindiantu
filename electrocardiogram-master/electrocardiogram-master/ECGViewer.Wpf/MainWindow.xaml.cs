@@ -1,4 +1,5 @@
 using System.Windows;
+using ECGViewer.Wpf.ViewModels;
 
 namespace ECGViewer.Wpf
 {
@@ -7,9 +8,10 @@ namespace ECGViewer.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainWindowViewModel viewModel)
         {
             InitializeComponent();
+            DataContext = viewModel;
         }
     }
 }
