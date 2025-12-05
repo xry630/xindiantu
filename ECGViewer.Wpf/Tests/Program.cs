@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using ECGViewer.Wpf.Services;
@@ -73,7 +74,7 @@ namespace ECGViewer.Wpf.Tests
             Console.WriteLine($"   Property changed notification: {(propertyChanged ? "✓" : "✗")}");
             
             // Test validation
-            viewModel.ValidateProperty("TestProperty", null);
+            viewModel.PublicValidateProperty("TestProperty", null);
             Console.WriteLine($"   Validation working: {(viewModel.HasErrors ? "✓" : "✗")}");
         }
 
@@ -172,6 +173,11 @@ namespace ECGViewer.Wpf.Tests
             set => SetProperty(ref _testProperty, value);
         }
         
+        public void PublicValidateProperty(string propertyName, object value)
+        {
+            ValidateProperty(propertyName, value);
+        }
+        
         protected override void ValidateProperty(string propertyName, object value)
         {
             if (propertyName == nameof(TestProperty) && value == null)
@@ -221,7 +227,7 @@ namespace ECGViewer.Wpf.Tests
 
         public Task<System.Collections.Generic.IEnumerable<string>> ShowOpenFileDialogMultipleAsync(string title = "Open Files", string filter = "All files (*.*)|*.*", string initialDirectory = "")
         {
-            return Task.FromResult(System.Collections.Generic.IEnumerable<string>.Empty);
+            return Task.FromResult(Enumerable.Empty<string>());
         }
 
         public Task<string> ShowSaveFileDialogAsync(string title = "Save File", string filter = "All files (*.*)|*.*", string initialDirectory = "", string defaultFileName = "")
@@ -252,7 +258,11 @@ namespace ECGViewer.Wpf.Tests
 
         public TimeSpan Interval { get; set; }
 
-        public bool IsEnabled => _isEnabled;
+        public bool IsEnabled
+        {
+            get => _isEnabled;
+            set => _isEnabled = value;
+        }
 
         public void Start()
         {

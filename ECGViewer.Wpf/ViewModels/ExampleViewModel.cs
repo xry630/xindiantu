@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using ECGViewer.Wpf.Commands;
 using ECGViewer.Wpf.Services;
 using ECGViewer.Wpf.Timing;

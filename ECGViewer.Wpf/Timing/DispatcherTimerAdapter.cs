@@ -24,7 +24,7 @@ namespace ECGViewer.Wpf.Timing
         /// <param name="dispatcher">The dispatcher to use</param>
         public DispatcherTimerAdapter(Dispatcher dispatcher)
         {
-            _dispatcherTimer = new DispatcherTimer(dispatcher);
+            _dispatcherTimer = new DispatcherTimer(DispatcherPriority.Normal, dispatcher);
         }
 
         /// <summary>
