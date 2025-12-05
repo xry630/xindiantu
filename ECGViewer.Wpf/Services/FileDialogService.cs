@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Microsoft.Win32;
 
 namespace ECGViewer.Wpf.Services
@@ -107,13 +108,13 @@ namespace ECGViewer.Wpf.Services
             {
                 // For folder selection, we need to use a different approach since WPF doesn't have a built-in folder dialog
                 // We'll use the System.Windows.Forms.FolderBrowserDialog
-                using (var dialog = new System.Windows.Forms.FolderBrowserDialog())
+                using (var dialog = new FolderBrowserDialog())
                 {
                     dialog.Description = title;
                     dialog.SelectedPath = initialDirectory;
                     dialog.ShowNewFolderButton = true;
 
-                    if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    if (dialog.ShowDialog() == DialogResult.OK)
                     {
                         return dialog.SelectedPath;
                     }
